@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel California</title>
+    <link rel="stylesheet" href="california.css">
+    <script src="jquery-2.2.3.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    
+    <script>
+    $(function(){$( "#calendario" )
+    .datepicker({changeMonth: true,
+    changeYear:true,
+    showOtherMonths:true,
+    SelectOutherMonths:true,
+    dateFormat:'dd/mm/yy',
+    dayNames:['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sabado'],
+    dayNamesMin:['D','S','T','Q','Q','S','S'],
+    dayNamesShort:['Dom','Seg','Ter','Qua','Qui','Sex','Sab'],
+    monthNames:['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+    montherNamesShort:['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez']});});
+</script>
+
+</head>
+<body>
+   <div class="main">
+        <div class="cabeca">
+           <h1>Hotel California</h1>
+           <h3>"Aqui temos bom atendimento, conforto e lazer.</h3>  
+        </div>
+        <div class="usuario">
+            <form>
+        
+                <label for="nome"> Usuário:</label>
+                <input type="text" id="nome" value="Fabiano Oliveira"/>
+            </div>
+        </form>
+        </div>
+        <div class="body">
+            <div class="corpo"></div>
+            <div class="barra-menu">
+                <div class="dropdown">
+                    <button id="dropbutton">Consulta</button>
+                </div>
+                <div class="dropdown">
+                    <button id="dropbutton">Cadastro</button>
+                </div>
+                <div class="dropdown">
+                    <button id="dropbutton">Reserva</button>
+                </div>
+                <div class="dropdown">
+                    <button id="dropbutton">Histórico</button>
+                </div>
+                <div class="dropdown">
+                    <button id="dropbutton">Login</button>
+                </div>
+            </div>
+            <br>
+            <div class="abdomen">
+               
+                <div class="direita">
+                    <link rel="stylesheet" href="https://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css">
+                        <div class="calendario" aling="center" id="calendario"></div> 
+                </div>
+                <div class="discurso" >
+                    <p>O preço no Booking varia entre R$ 170,00 e R$ 130,00, você pode reservar Hotel Durma Bem clicando aqui, ou entrar em contato diretamente com o setor de reservas ..</p>
+                </div>
+                <div class="esquerda">
+                    <div id="endereco">
+                    <p>Rua : Fonte Seca, Nº33 <br> Centro - Betim</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="pes">
+            <p>&copy;Criado por Fabiano Oliveira</p>
+        </div>
+
+    
+    </div>
+</body>
+</html>
